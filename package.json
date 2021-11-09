@@ -1,0 +1,35 @@
+{
+  "name": "user-management-system-crud",
+  "version": "1.0.0",
+  "description": "CRUD application with express and mongodb",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omergencoglu/user-management-system-crud.git"
+  },
+  "keywords": [
+    "crud",
+    "mongodb",
+    "express"
+  ],
+  "author": "omer gencoglu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/omergencoglu/user-management-system-crud/issues"
+  },
+  "homepage": "https://github.com/omergencoglu/user-management-system-crud#readme",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.12",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15"
+  }
+}
