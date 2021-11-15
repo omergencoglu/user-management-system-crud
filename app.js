@@ -3,6 +3,8 @@ const dotenv = require("dotenv");
 const morgan = require("morgan");
 const path = require("path");
 
+const connectDB = require("./server/database/connection");
+
 const app = express();
 
 dotenv.config({ path: ".env" });
@@ -10,6 +12,9 @@ const port = process.env.PORT || 8080;
 
 //log request
 app.use(morgan("tiny"));
+
+//mongoDB connection
+connectDB();
 
 //parse request
 app.use(express.urlencoded({ extended: true }));
